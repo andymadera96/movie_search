@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+}
+body {
+  background-color: #555;
+}
+header {
+  background-color: #222;
+}
+
+.searchContainer {
+  width: 30%;
+  margin: auto;
+  padding: 10px;
+}
+.searchForm {
+  display: flex;
+  flex-direction: row;
+}
+.search {
+  border: 0;
+  outline: 0;
+  color: #555;
+  padding: 10px 25px;
+  height: 30px;
+  border-radius: 5px;
+  flex: 1;
+  margin-right: 16px;
+  font-size: 18px;
+}
+.search:focus {
+  outline: auto;
+  outline-color: rgb(0, 255, 149);
+}
+.searchButton {
+  background: whitesmoke;
+  outline: 0;
+  border: 0;
+  border-radius: 5px;
+  width: 50px;
+  height: 30px;
+  cursor: pointer;
+}
+.searchButton img {
+  width: 25px;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.suggestionContainer {
+  background-color: #222;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border-radius: 5px;
+  margin: 1rem;
+}
+.suggestionContainer img {
+  width: 300px;
+  min-height: 447px;
+}
+.movieDetails {
+  height: 110px;
+  font-size: 2em;
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.movieTitle {
+  text-align: center;
+}
+.movieTitle:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+.container {
+  display: none;
+  width: 100%;
+  max-width: 700px;
+  background: peachpuff;
+  color: #fff;
+  margin: 100px auto 0;
+  border-radius: 20px;
+  padding: 40px 35px;
+}
+.error {
+  display: none;
+}
+/* .movieContainer {
+  display: none;
+} */
+div.movieContainer {
+  padding-top: 20px;
+  display: flex;
+}
+.title {
+  font-size: 50px;
+  padding-bottom: 20px;
+}
+
+div.movieContainer img {
+  width: 300px;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: black;
+  margin: 0 auto;
+  max-width: 300px;
+  min-width: 300px;
+}
+.rating {
+  padding-bottom: 20px;
+}
+.details p {
+  text-transform: capitalize;
+}
+
+.otherDetails {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
